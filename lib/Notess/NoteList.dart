@@ -50,11 +50,11 @@ class _NoteListState extends State<NoteList> {
             child: ListView(
               children: [
                 UserAccountsDrawerHeader(
-                  otherAccountsPictures: [
+                 /* otherAccountsPictures: [
                     CircleAvatar(child: Text("R"),backgroundColor: Colors.pink.shade300),
                     CircleAvatar(child: Text("H"),backgroundColor: Colors.purple.shade400),
                     CircleAvatar(child: Text("A"),backgroundColor: Colors.indigo),
-                  ],
+                  ],*/
                   decoration: BoxDecoration(
                   gradient: LinearGradient(
                     begin: Alignment.bottomLeft,
@@ -168,7 +168,7 @@ class _NoteListState extends State<NoteList> {
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(15),
                             image: DecorationImage(image: AssetImage("assets/winter.jpg"),fit: BoxFit.cover,
-                              //colorFilter:ColorFilter.mode(Colors.white, BlendMode.softLight)
+                              colorFilter:ColorFilter.mode(Colors.white, BlendMode.softLight)
                                )
                           ),
                           child:Stack( children: [ Padding(
